@@ -16,6 +16,15 @@ function centroids = computeCentroids(X, idx, K)
 % You need to return the following variables correctly.
 centroids = zeros(K, n);
 
+% ====================== YOUR CODE HERE ======================
+% Instructions: Go over every centroid and compute mean of all points that
+%               belong to it. Concretely, the row vector centroids(i, :)
+%               should contain the mean of the data points assigned to
+%               centroid i.
+%
+% Note: You can use a for-loop over the centroids to compute this.
+%
+
 % Iterate over all centroids
 for k = 1:size(X, 1)
 	% m shows how many examples that are assigned to centroid k
@@ -32,10 +41,6 @@ for k = 1:size(X, 1)
 		centroids(k, :) = s ./ m;
 	end
 end
-
-
-
-
 
 % =============================================================
 
